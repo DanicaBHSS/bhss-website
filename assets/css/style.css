@@ -138,6 +138,9 @@ section{position:relative}
 .form .check input{width:20px;height:20px;margin:0;accent-color:#000}
 .form .hp{position:absolute;left:-5000px}
 .form button{margin-top:8px}
+.form button:disabled{opacity:.6;cursor:wait}
+.form-status{margin-top:16px}
+.form-status:empty{display:none}
 .form .note{font-size:.8rem;opacity:.7;margin-top:12px}
 
 /* ---------- footer ---------- */
@@ -149,9 +152,10 @@ section{position:relative}
 .site-footer a{text-decoration:none}
 .site-footer a:hover{text-decoration:underline}
 
-/* ---------- 404 ---------- */
-.notfound{padding:200px 0 120px;min-height:60vh}
-.notfound h1{margin-bottom:30px}
+/* ---------- 404 / thank-you ---------- */
+.notfound,.thanks{padding:200px 0 120px;min-height:60vh}
+.notfound h1,.thanks h1{margin-bottom:30px}
+.thanks .btn{margin-top:8px}
 
 /* ---------- responsive ---------- */
 @media (max-width:767px){
